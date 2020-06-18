@@ -1,0 +1,191 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Captivate a Corporate Category Bootstrap Responsive Website Template | Home :: W3layouts</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+
+</head>
+
+<body>
+  <!-- site header -->
+  <header id="site-header" class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html" style="color: black;">
+        <span class="fa fa-cloud"></span> Knwoledgly
+      </a>
+      <button class="navbar-toggler bg-gradient" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto">
+          <!-- <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+              </li> -->
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="btn btn-primary btn-style" style="color: black;">APPLY AS A MENTOR</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- //site header -->
+
+  <!-- banner section -->
+  <section id="home" class="banner">
+    <div>
+      <img src="assets/images/Boy.jpg" width="1024" height="768" style="width: 100%; height: 100%;" alt="">
+    </div>
+  </section>
+  <!-- //banner section -->
+
+  <!-- home page about -->
+  <section class="w3l-about">
+    <div class="container">
+      <div class="row about-content justify-content-center">
+        <div class="col-lg-10 align-center">
+          <h3 class="section-title">WHO WE ARE</h3>
+          <p class="text-center" style="font-size: 20px;color: black;">Knwoledgly brings a different spin to career
+            guidance by
+            connecting you with different
+            mentors of various
+            fields of education, so you can explore different careers and find what sparks your soul!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //home page about -->
+
+  <!-- home page about -->
+  <section>
+    <div class="container">
+      <div class="row about-content justify-content-center">
+        <div class="col-lg-10 align-center">
+          <h3 class="section-title">WHAT KKNOWLEDGLY IS LOOKING FOR</h3>
+          <p class="text-center" style="font-size: 20px;color: black;">We are looking for the best and brightest minds
+            across the
+            globe who wants to <b>inspire others</b>, and are keen to build their online footprint by developing
+            curiosity among others and being a mentor they wish they had!</p><br>
+          <p class="text-center" style="font-size: 20px;color: black;">We want mentors with <b>desire to develop</b> and
+            help others
+            and have a sincere interest in helping someone else succeed. At Knwoledgly, we want mentors and mentees to
+            have a valuable and inspiring partnership in their learning journey!</p>
+        </div>
+        <div class="row justify-content-center">
+          <img src="assets/images/Circles.jpg" width="768" height="576" alt="">
+        </div>
+        <div class="row justify-content-center">
+          <img src="assets/images/Logos.jpg" width="768" height="576" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row justify-content-center">
+      <img src="assets/images/Bottom.jpg" width="100%">
+    </div>
+  </section>
+  <!-- //home page about -->
+
+
+  <!-- move top -->
+  <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
+    <span class="fa fa-angle-up"></span>
+  </button>
+
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- //move top -->
+
+  <!-- javascript -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+  <!-- libhtbox -->
+  <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+  <!-- particles -->
+  <script src='assets/js/particles.min.js'></script>
+  <script src="assets/js/script.js"></script>
+  <!-- //particles -->
+
+  <!-- owl carousel -->
+  <script src="assets/js/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function () {
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          767: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
+    })
+  </script>
+
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+
+  <!-- bootstrap -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
