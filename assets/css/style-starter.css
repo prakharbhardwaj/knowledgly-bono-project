@@ -3338,7 +3338,7 @@ input[type="button"].btn-block {
   border-color: rgba(255, 255, 255, 0.1); }
 
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.5); }
@@ -4757,7 +4757,7 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #49c0b6 !important; }
+  background-color: #ffe500 !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -9556,13 +9556,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 :root {
   --para-color: #767575;
-  --heading-color: #3f3d56; }
+  --heading-color: #000000; }
 
 html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -9600,7 +9600,7 @@ p.white {
 01. GENERAL STYLE
 *===================================*/
 section {
-  padding: 70px 0; }
+  padding: 50px 0; }
 
 section:first-child {
   padding-top: 0; }
@@ -9651,7 +9651,8 @@ a:hover {
   font-weight: bold;
   font-size: 2em;
   margin-bottom: 1em;
-  padding-bottom: 0.6em;
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
   position: relative;
   text-align: center;
   text-transform: capitalize; }
@@ -9661,7 +9662,7 @@ a:hover {
   margin: 0 auto;
   bottom: 0;
   content: "";
-  height: 2px;
+  /* height: 2px; */
   left: 0;
   position: absolute;
   right: 0;
@@ -9680,7 +9681,7 @@ a:hover {
   background-color: var(--heading-color);
   bottom: 0;
   content: "";
-  height: 2px;
+  /* height: 2px; */
   left: 0;
   position: absolute;
   width: 80px;
@@ -9696,7 +9697,7 @@ a:hover {
 h3.title {
   font-weight: bold;
   font-size: 2.2em;
-  padding-bottom: 1em;
+  /* padding-bottom: 1em; */
   position: relative; }
 
 .left-title {
@@ -9753,7 +9754,7 @@ header.active {
   text-transform: uppercase; }
 
 .navbar .navbar-brand img {
-  max-width: 140px;
+  max-width: 200px;
   transition: all 0.5s ease; }
 
 .navbar-expand-lg .navbar-nav .nav-item {
@@ -9803,10 +9804,11 @@ header.active {
 
 header.nav-fixed {
   padding: 10px 15px;
-  background-color: #124f8f; }
+  background-color: white;
+}
 
 header.nav-fixed .navbar-brand img {
-  max-width: 102px; }
+  max-width: 200px; }
 
 /*===================================*
 03. HOME
@@ -10029,9 +10031,9 @@ max-width: 991px
 ---------------------------------------------------*/
 @media only screen and (max-width: 991px) {
   #site-header {
-    padding-left: 25px;
-    padding-right: 25px;
-    background: #0c3866; }
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:rgba(0,0,0,.3); }
   .navbar-toggler {
     padding: 0.25rem 0rem; }
   header.fixed-top {
@@ -10059,14 +10061,14 @@ max-width: 991px
     bottom: 0; }
   .navbar-expand-lg .navbar-nav .nav-link {
     display: block;
-    padding: 10px 0; }
+    padding: 5px 0; }
   .navbar-collapse {
     padding: 15px 0; }
   li.nav-item a.btn {
     margin-top: 10px; }
   header {
     height: auto;
-    padding: 10px 0; }
+    padding: 5px 0; }
   header.nav-fixed {
     height: auto; } }
 
