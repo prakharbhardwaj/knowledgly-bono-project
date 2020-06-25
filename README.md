@@ -1,1 +1,0 @@
-# knowledgly-bono-project
